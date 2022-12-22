@@ -1,3 +1,5 @@
+![alt text](/design/desktop-preview)
+
 # Frontend Mentor - Product preview card component
 
 ## Bem-Vindo! 👋
