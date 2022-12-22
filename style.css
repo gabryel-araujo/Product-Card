@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main {
+  display: grid;
+  grid-template-areas: 'photo info';
+}
+
+#div-photo{
+  grid-area: photo;
+  width: 300px;
+}
+
+#div-info{
+  grid-area: info;
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  border-radius: 0 10px 10px 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#prices{
+  display: flex;
+  align-items: center;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+
+#prices p{
+  padding-left: 20px;
+  text-decoration: line-through;
+  font-family: 14px;
+  font-family: 'Montserrat', serif;
+  color: grey;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+#mobileImage{
+  display: none;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: 0;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+i {
+  padding-right: 10px;
+}
+
+#title {
+  font-family: 'Fraunces', serif;
+}
+
+#text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: grey;
+}
+
+#perfume {
+  color: gray;
+  font-family: 'Montserrat', serif;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 414px){
+  #main {
+    grid-template-areas: 
+    'photo' 
+    'info';
+    justify-items: center;
+  }
+
+  #div-photo {
+    display: flex;
+    justify-content: center;
+  }
+
+  #desktopImage {
+    display: none;
+  }
+  
+  #mobileImage {
+    display: block;
+    margin-top: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #div-info {
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
