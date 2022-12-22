@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 #main {
@@ -96,6 +97,11 @@ i {
   color: gray;
   font-family: 'Montserrat', serif;
   letter-spacing: 5px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 414px){
